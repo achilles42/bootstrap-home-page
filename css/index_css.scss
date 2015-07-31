@@ -1,0 +1,46 @@
+
+@mixin box-values($height, $width, $background, $margin, $padding) {
+  height: $height;
+  width: $width;
+  background: $background;
+  margin: $margin;
+  padding: $padding;
+}
+@mixin margin-padding($margin, $padding) {
+  display: inline;
+  margin: $margin;
+  padding: $padding;
+  text-align: center;
+}
+.nav {
+  @include box-values(5px, 100%, #FFF, 0px 50px 10px 0, 10px);
+  font-weight: 700;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-decoration: none;
+}
+ul {
+  @include margin-padding(10px 250px 10px 0, 10px);
+  li {
+    @include margin-padding(10px 0 10px 0, 15px);
+  }
+}
+.nav ul :hover {
+  background: #E6E6E6;
+  width: 100%;
+}
+.body-content {
+  @include box-values(750px, 1500px, #9783b9, 10px 50px 10px 1px, 0);
+  text-align: center;
+}
+footer {
+  height: 55px;
+  width: 1400px;
+  text-align: center;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+p {
+  font-size: 20px
+}
