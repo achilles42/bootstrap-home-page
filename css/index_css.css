@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0; }
+
 .nav {
   height: 5px;
   width: 100%;
@@ -39,7 +43,7 @@ footer {
   width: 1400px;
   text-align: center; }
 
-a:hover, a:link {
+a:link {
   text-decoration: none; }
 
 p {
@@ -62,22 +66,18 @@ p {
   font-size: 30px;
   color: #FFF; }
 
-body {
-  margin: 0;
-  padding: 0; }
-
 .download-link {
-  width: 200px;
-  height: 14px;
+  width: 15%;
   font-size: 20px;
+  color: white;
   line-height: 14px;
-  color: #fff;
   border: 1px solid #FFFFFF;
   border-radius: 5px 5px 5px 5px;
   display: block;
   margin: 10px auto;
   padding: 15px 30px; }
-  .download-link :hover {
-    color: #FFF; }
+  .download-link:hover {
+    color: #563d7c;
+    background: #fff; }
 
 /*# sourceMappingURL=index_css.css.map */
