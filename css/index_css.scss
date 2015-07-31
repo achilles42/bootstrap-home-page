@@ -6,20 +6,22 @@
   margin: $margin;
   padding: $padding;
 }
+
 @mixin margin-padding($margin, $padding) {
   display: inline;
   margin: $margin;
   padding: $padding;
   text-align: center;
 }
+
 .nav {
   @include box-values(5px, 100%, #FFF, 0px 50px 10px 0, 10px);
   font-weight: 700;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 ul {
-  @include margin-padding(10px 250px 10px 0, 10px);
+  @include margin-padding(10px 250px 10px 0, 0);
   li {
     @include margin-padding(10px 0 10px 0, 15px);
   }
@@ -29,18 +31,57 @@ ul {
   width: 100%;
 }
 .body-content {
-  @include box-values(750px, 1500px, #9783b9, 10px 50px 10px 1px, 0);
+  @include box-values(750px, 1500px, #563d7c,0 , 0);
   text-align: center;
+}
+.upper-body {
+  padding: 100px 0 0 0;
 }
 footer {
   height: 55px;
   width: 1400px;
   text-align: center;
 }
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+a:hover, a:link{
+  text-decoration: none;
 }
 p {
-  font-size: 20px
+  font-size: 20px;
+  margin: 20px 0 20px 0;
 }
+.box-logo {
+  width: 144px;
+  height: 144px;
+  font-size: 108px;
+  line-height: 140px;
+  color: #FFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 15%;
+  display: block;
+  margin:0 auto;
+}
+.description-logo {
+  width: 80%;
+  font-size: 30px;
+  color: #FFF;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.download-link {
+  width: 200px;
+  height: 14px;
+  font-size: 20px;
+  line-height: 14px;
+  color: #fff;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  display: block;
+  margin:10px auto;
+  padding: 15px 30px;
+  :hover {
+    color: #FFF;
+  }
+}
+

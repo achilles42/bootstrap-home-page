@@ -5,13 +5,13 @@
   margin: 0px 50px 10px 0;
   padding: 10px;
   font-weight: 700;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none; }
 
 ul {
   display: inline;
   margin: 10px 250px 10px 0;
-  padding: 10px;
+  padding: 0;
   text-align: center; }
   ul li {
     display: inline;
@@ -26,20 +26,58 @@ ul {
 .body-content {
   height: 750px;
   width: 1500px;
-  background: #9783b9;
-  margin: 10px 50px 10px 1px;
+  background: #563d7c;
+  margin: 0;
   padding: 0;
   text-align: center; }
+
+.upper-body {
+  padding: 100px 0 0 0; }
 
 footer {
   height: 55px;
   width: 1400px;
   text-align: center; }
 
-a:hover, a:visited, a:link, a:active {
+a:hover, a:link {
   text-decoration: none; }
 
 p {
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 20px 0 20px 0; }
+
+.box-logo {
+  width: 144px;
+  height: 144px;
+  font-size: 108px;
+  line-height: 140px;
+  color: #FFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 15%;
+  display: block;
+  margin: 0 auto; }
+
+.description-logo {
+  width: 80%;
+  font-size: 30px;
+  color: #FFF; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.download-link {
+  width: 200px;
+  height: 14px;
+  font-size: 20px;
+  line-height: 14px;
+  color: #fff;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  display: block;
+  margin: 10px auto;
+  padding: 15px 30px; }
+  .download-link :hover {
+    color: #FFF; }
 
 /*# sourceMappingURL=index_css.css.map */
