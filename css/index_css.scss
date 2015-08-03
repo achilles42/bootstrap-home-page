@@ -1,4 +1,3 @@
-
 @mixin box-values($height, $width, $background, $margin, $padding) {
   height: $height;
   width: $width;
@@ -6,21 +5,20 @@
   margin: $margin;
   padding: $padding;
 }
-
 @mixin margin-padding($margin, $padding) {
   display: inline;
   margin: $margin;
   padding: $padding;
   text-align: center;
 }
-
 body {
   margin: 0;
   padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
-
 .nav {
-  @include box-values(5px, 100%, #FFF, 0px 50px 10px 0, 10px);
+  @include box-values(15px, 100%, #FFF, 0px 50px 10px 0, 10px);
   font-weight: 700;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
@@ -33,26 +31,37 @@ ul {
 }
 .nav ul :hover {
   background: #E6E6E6;
-  width: 100%;
+  width: 30%;
 }
 .body-content {
-  @include box-values(750px, 1500px, #563d7c, 0, 0);
+  @include box-values(580px, 1500px, #FFF, 0, 0);
   text-align: center;
 }
 .upper-body {
-  padding: 100px 0 0 0;
-}
-footer {
-  height: 55px;
-  width: 1400px;
-  text-align: center;
+  padding: 100px 0 40px 0;
+  background: #563d7c;
+  a {
+    width: 15%;
+    font-size: 20px;
+    color : white;
+    line-height: 14px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    margin:10px auto;
+    padding: 15px 30px 15px 30px;
+    &:hover {
+      color: #563d7c;
+      background: #fff;
+    }
+  }
 }
 a:link{
   text-decoration: none;
 }
 p {
-  font-size: 20px;
-  margin: 20px 0 20px 0;
+  font-size: 30px;
+  margin: 35px auto 35px auto;
 }
 .box-logo {
   width: 144px;
@@ -66,23 +75,53 @@ p {
   margin:0 auto;
 }
 .description-logo {
-  width: 80%;
+  width: 60%;
   font-size: 30px;
   color: #FFF;
+  text-align: center;
 }
-.download-link {
-  width: 15%;
-  font-size: 20px;
-  color : white;
-  line-height: 14px;
-  border: 1px solid #FFFFFF;
-  border-radius: 5px 5px 5px 5px;
-  display: block;
-  margin:10px auto;
-  padding: 15px 30px;
-  &:hover {
-    color: #563d7c;
-    background: #fff;
+.bootstrap-version {
+  font-size: 15px;
+  color: #9783b9;
+}
+.middle-body {
+  padding: 50px 0 0 0;
+}
+.design-for-everyone {
+  margin: 20px auto 0 5px;
+  font-size: 40px;
+}
+.middle-body-description {
+  max-width: 80%;
+  margin:0 auto 0 auto;
+}
+.bottom-line {
+  width: 7%;
+  border-bottom: 1px solid #CCCCCC;
+}
+.row {
+  display: table;
+  padding: auto 20px 0 20px;
+  width: 90%;
+  margin: auto 10px auto 80px;
+  .column {
+   display: table-cell;
+   padding: 0 15px 0 15px;
+   img {
+    display: block;
+    max-width: 90%;
+    padding: 0;
+    margin: 0 -15px 5px -15px;
+   }
+   .desc {
+     font-size: 20px;
+     text-align: center;
+     max-width: 75%;
+     margin: 0;
+    }
   }
 }
-
+footer {
+  width: 1400px;
+  text-align: center;
+}
