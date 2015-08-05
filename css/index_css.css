@@ -168,7 +168,7 @@ p {
       width: 99%; }
 
 .footer {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 50px auto;
   padding: auto; }
   .footer ul {
     margin: 20px 0 20px 0;
@@ -182,9 +182,16 @@ p {
       font-weight: 200; }
       .footer .reference-link p a {
         color: #337ab7; }
-  .footer .version ul li a {
-    color: #337ab7; }
-  .footer .version ul li frist-child a {
-    color: #767676; }
+  .footer .version {
+    margin: 0 auto 0 auto;
+    width: 70%; }
+    .footer .version ul li a {
+      color: #337ab7;
+      font-size: 14px; }
+    .footer .version ul li {
+      color: #767676;
+      font-size: 14px;
+      padding: 0 -10px 0 -10px;
+      padding: 0 -10px 0 -10px; }
 
 /*# sourceMappingURL=index_css.css.map */

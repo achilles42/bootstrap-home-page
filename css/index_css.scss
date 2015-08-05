@@ -11,10 +11,6 @@
   padding: $padding;
   text-align: center;
 }
-@mixin line($width, $border) {
-  width: $width;
-  border-bottom: $border;
-}
 * {
   padding: 0;
   margin: 0;
@@ -188,7 +184,7 @@ p {
   }
 }
 .footer {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 50px auto;
   padding: auto;
   ul {
     margin: 20px 0 20px 0;
@@ -207,12 +203,18 @@ p {
     }
   }
   .version {
+    margin: 0 auto 0 auto;
+    width: 70%;
     ul {
       li a{
         color: #337ab7;
+        font-size: 14px;
       }
-      li frist-child a {
+      li {
         color: #767676;
+        font-size: 14px;
+        padding: 0 -10px 0 -10px;
+        padding: 0 -10px 0 -10px;
       }
     }
   }
