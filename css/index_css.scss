@@ -27,6 +27,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   font: 100%;
+  font-weight: 200;
 }
 .nav {
   @include box-values(15px, 100%, #FFF, 0px 50px 10px 0, 10px);
@@ -186,11 +187,33 @@ p {
     }
   }
 }
-.github-icon {
-  width: 14px;
-  height: 14px;
-  margin-right: 4px;
-  background-image: url(../images/github.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+.footer {
+  margin: 0 auto 20px auto;
+  padding: auto;
+  ul {
+    margin: 20px 0 20px 0;
+    padding: 0 0 0 0;
+  }
+  .reference-link {
+    margin: 20px 0 20px 0;
+    p {
+      margin: 0 0 0 0;
+      font-size: 15px;
+      color: #767676;
+      font-weight: 200;
+      a {
+        color: #337ab7;
+      }
+    }
+  }
+  .version {
+    ul {
+      li a{
+        color: #337ab7;
+      }
+      li frist-child a {
+        color: #767676;
+      }
+    }
+  }
 }
